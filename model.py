@@ -312,7 +312,7 @@ if lab_numbers == "01 - One risky and one risk-free asset":
 
 
  
-    #st.header("Select Symbol to Forecast")
+    #st.header("Select several Symbol to Forecast")
     symbol_forecast = st.selectbox("", symbols)
  
     #data = yf.Ticker(symbol_forecast)
@@ -505,7 +505,7 @@ if solution2:
 
 
 
-st.markdown("#### Q3 - Same Question but - Include Short Sell Conditions - Combine  two assets (one risky and one risk-free asset) into portfolios assuming that short-sell constraints are in place. Calculate the expected returns and standard deviation of the portfolio.")
+st.markdown("#### Q3 - Not Same Question but - Include Short Sell Conditions - Combine  two assets (one risky and one risk-free asset) into portfolios assuming that short-sell constraints are in place. Calculate the expected returns and standard deviation of the portfolio.")
 
 st.success("If we want to include short sales in the portfolio, it means we can have negative weights for assets, indicating short positions. ")
 
