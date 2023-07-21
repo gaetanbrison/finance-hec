@@ -320,7 +320,7 @@ if lab_numbers == "01 - One risky and one risk-free asset": # premiere page
 
     st.markdown("   ")
     # st.write("**Variation of the stock 📈**")
- 
+
     #st.header("Select Symbol to Forecast")
     #symbol_forecast = st.selectbox("", symbols)
     df_data_2 = df_stock[df_stock["symbol"] == risky_asset].reset_index(drop=True)
@@ -554,10 +554,12 @@ if lab_numbers == "01 - One risky and one risk-free asset": # premiere page
 
     st.markdown("  ")
 
+
     solution = st.checkbox('**Solution** ✅',key="SQ2.22")
     if solution:
         answer_text = f"The portfolio's standard deviation is {np.round(portfolio_std,4)}"
         st.success(answer_text)
+
 
 
     st.markdown("   ")
